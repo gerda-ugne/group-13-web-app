@@ -1,0 +1,66 @@
+/* CSS that applies for the entire page */
+*{
+
+font-family:'Open Sans', sans-serif;
+
+}
+
+
+/* Styling for header text */
+header h1{
+
+  text-align: center;
+
+
+}
+
+/* Styling for the navigation bar */
+nav
+{
+  background-color: #bbd3a2;
+  text-align: center;
+}
+
+/* Styling for the links in the navigation bar */
+nav a
+{
+  color: #34252f !important;
+
+/* Fade effect when hovered */
+  transition:.5s;
+
+/* Support for other browsers*/
+-o-transition:.5s;
+-ms-transition:.5s;
+-moz-transition:.5s;
+-webkit-transition:.5s;
+}
+
+/* Styling for the links when they are hovered on */
+nav a:hover
+{
+  color:white !important;
+  background-color: #7a566e;
+}
+
+/* Styling for the buttons */
+main button {
+
+  background-color:#7a566e!important;
+  color: white !important;
+
+}
+
+/* Styling for the buttons when hovered on */
+main button:hover
+{
+  background-color: #bbd3a2!important;
+  color: #34252f  !important;
+
+}
+
+/* Sets the background colour of the page */
+body
+{
+  background-color: #d8e0c5;
+}
