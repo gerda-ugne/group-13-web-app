@@ -1,5 +1,5 @@
 /* CSS that applies for the entire page */
-*
+body
 {
   font-family: 'Raleway',sans-serif;
 }
@@ -69,6 +69,7 @@ body
   background-color: #d8e0c5;
 }
 
+/* Styling for footer */
 footer{
   font-size:13px;
   background-color: #7a566e;
@@ -76,10 +77,13 @@ footer{
 
 }
 
+/* Styling for footer headlines */
 footer h6
 {
   font-weight:bold;
 }
+
+/* Styling for links in the footer */
 footer a
 {
   color:white;
@@ -93,12 +97,15 @@ footer a
   -moz-transition:.5s;
   -webkit-transition:.5s;
 }
+
+/* Styling for links in the footer when hovered */
 footer a:hover
 {
   color:lightgray;
   font-weight: italic;
   text-decoration: none;
 }
+
 #questions
 {
   font-size:40px;
