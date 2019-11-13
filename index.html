@@ -13,6 +13,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- import css file -->
   <link rel="stylesheet" href="css/master.css">
+  <!-- import mapbox files -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+
 </head>
 
 
@@ -75,7 +79,7 @@
 
     <div class="row pt-4 px-3">
 
-      <button type="button" class="btn btn-lg btn-block">Available items in the shop</button>
+      <button type="button" class="btn btn-lg btn-block" onclick="location.href = 'menu.html';">Available items in the shop</button>
 
     </div>
 
@@ -91,6 +95,19 @@
 
       <div class="col">
         <img class="img-fluid" src="https://picsum.photos/400/300" alt="">
+      </div>
+
+    </div>
+
+    </div>
+
+    <div class="row pt-2">
+
+      <div class="col">
+
+        <div id='map' style='max-width: 1045px; height: 200px;'></div>
+        <script type="text/javascript" src="js/map.js"></script>
+
       </div>
 
     </div>
