@@ -64,3 +64,34 @@ body
 {
   background-color: #d8e0c5;
 }
+
+footer{
+  font-size:13px;
+  background-color: #7a566e;
+  color:white;
+
+}
+
+footer h6
+{
+  font-weight:bold;
+}
+footer a
+{
+  color:white;
+
+  /* Fade effect when hovered */
+    transition:.5s;
+
+  /* Support for other browsers*/
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+}
+footer a:hover
+{
+  color:lightgray;
+  font-weight: italic;
+  text-decoration: none;
+}
