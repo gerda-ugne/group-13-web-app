@@ -110,4 +110,19 @@ footer a:hover
 {
   font-size:40px;
   font-family: 'Permanent Marker', cursive;
+  color:black;
+  text-decoration: none;
+
+  /* Fade effect when hovered */
+    transition:.5s;
+
+  /* Support for other browsers*/
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+}
+#questions:hover
+{
+  color: #7a566e;
 }
