@@ -9,13 +9,22 @@ h1, h2, h3, h4, h5, h6
   font-family: 'Permanent Marker', cursive;
 }
 
-
+#headerImg
+{
+  height:250px;
+  display: block;
+  margin: 0px auto;
+}
 /* Styling for header text */
 header h1{
 
   text-align: center;
 
 
+}
+
+header{
+  background-color: white;
 }
 
 /* Styling for the navigation bar */
