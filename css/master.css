@@ -4,31 +4,37 @@ body
   font-family: 'Raleway',sans-serif;
 }
 
+/* Fonts for headings */
 h1, h2, h3, h4, h5, h6
 {
   font-family: 'Permanent Marker', cursive;
+  color:#2e2e2e;
 }
 
+/* Styling for header image */
+#headerImg
+{
+  height:250px;
+  display: block;
+  margin: 0px auto;
+}
 
-/* Styling for header text */
-header h1{
-
-  text-align: center;
-
-
+/* Background color of header */
+header{
+  background-color: white;
 }
 
 /* Styling for the navigation bar */
 nav
 {
-  background-color: #bbd3a2;
+  background-color: #329e62;
   text-align: center;
 }
 
 /* Styling for the links in the navigation bar */
 nav a
 {
-  color: #34252f !important;
+  color: white !important;
 
 /* Fade effect when hovered */
   transition:.5s;
@@ -44,21 +50,23 @@ nav a
 nav a:hover
 {
   color:white !important;
-  background-color: #7a566e;
+  background-color: #2e2e2e;
 }
 
 /* Styling for the buttons */
 main button {
 
-  background-color:#7a566e!important;
+  background-color:#2e2e2e !important;
   color: white !important;
+  font-family: 'Permanent Marker', cursive;
+
 
 }
 
 /* Styling for the buttons when hovered on */
 main button:hover
 {
-  background-color: #bbd3a2!important;
+  background-color:  #329e62 !important;
   color: #34252f  !important;
 
 }
@@ -66,13 +74,21 @@ main button:hover
 /* Sets the background colour of the page */
 body
 {
-  background-color: #d8e0c5;
+  background-color:#d9ede2;
+}
+
+/* Sets the colors for cards */
+.cardColor
+{
+  background:#2e2e2e ;
+  color:white;
 }
 
 /* Styling for footer */
+
 footer{
   font-size:13px;
-  background-color: #7a566e;
+  background-color: #2e2e2e;
   color:white;
 
 }
@@ -81,6 +97,7 @@ footer{
 footer h6
 {
   font-weight:bold;
+  color: white;
 }
 
 /* Styling for links in the footer */
@@ -106,6 +123,7 @@ footer a:hover
   text-decoration: none;
 }
 
+/* Styling for the questions in about page */
 #questions
 {
   font-size:40px;
