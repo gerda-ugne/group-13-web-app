@@ -69,7 +69,7 @@ main button {
 /* Styling for the buttons when hovered on */
 main button:hover
 {
-  background-color: #bbd3a2!important;
+  background-color:  #329e62 !important;
   color: #34252f  !important;
 
 }
@@ -87,6 +87,7 @@ body
 }
 
 /* Styling for footer */
+
 footer{
   font-size:13px;
   background-color: #2e2e2e;
