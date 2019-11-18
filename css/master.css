@@ -4,11 +4,14 @@ body
   font-family: 'Raleway',sans-serif;
 }
 
+/* Fonts for headings */
 h1, h2, h3, h4, h5, h6
 {
   font-family: 'Permanent Marker', cursive;
+  color:#2e2e2e;
 }
 
+/* Styling for header image */
 #headerImg
 {
   height:250px;
@@ -23,6 +26,7 @@ header h1{
 
 }
 
+/* Background color of header */
 header{
   background-color: white;
 }
@@ -80,6 +84,7 @@ body
   background-color:#d9ede2;
 }
 
+/* Sets the colors for cards */
 .cardColor
 {
   background:#2e2e2e ;
@@ -99,6 +104,7 @@ footer{
 footer h6
 {
   font-weight:bold;
+  color: white;
 }
 
 /* Styling for links in the footer */
@@ -124,6 +130,7 @@ footer a:hover
   text-decoration: none;
 }
 
+/* Styling for the questions in about page */
 #questions
 {
   font-size:40px;
