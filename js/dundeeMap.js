@@ -23,8 +23,18 @@ map.on('load', function() {
             "title": "The Little Green Larder",
             "icon": "shop"
           }
-
         },
+        {
+          "type": "Feature",
+          "geometry":{
+            "type": "Point",
+            "coordinates": [-122.414, 37.776]
+          },
+          "properties": {
+            "title": "BQ",
+            "icon": "shop"
+          }
+        }
         ]
       }
     },
