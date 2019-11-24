@@ -1,3 +1,4 @@
+
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ2VyZGEtdWduZSIsImEiOiJjazJudmhhODUwdTc3M2NwZWF0dGFjeGhhIn0.nRoeZsel8VskCqR_nU74jA';
 var map = new mapboxgl.Map({
 container: 'map',
@@ -284,7 +285,7 @@ map.on('load', function() {
               "coordinates": [-3.004002,56.483707]
             },
             "properties": {
-              "title": "The circle",
+              "title": "The Circle",
               "icon": "circle"
             }
           },
@@ -376,4 +377,6 @@ map.on('load', function() {
     }
   });
 });
+
+
 map.addControl(new mapboxgl.NavigationControl());
