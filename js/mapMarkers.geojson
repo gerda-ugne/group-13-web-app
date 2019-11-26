@@ -11,5 +11,17 @@
         "description": "Zero-waste shop"
       }
 
-}
+},
+{
+  "type": "FeatureCollection",
+  "features": [{
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.414, 37.776]
+      },
+      "properties": {
+        "title": "BQ",
+        "description": "recycle shop"
+      }
 }
