@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
+<!-- css required to filter shop (needs moved to master.css) -->
+<style>
+.filter {
+ display: none;
+}
+
+.show {
+  display: block;
+}
+</style>
+
+
+
 <head>
   <meta charset="utf-8">
   <!-- page title -->
@@ -49,6 +62,9 @@
           <a class="nav-link" href="menu.html">Products</a>
         </li>
         <li class="nav-item mx-2">
+          <a class="nav-link" href="shopGuide.html">Shopping guide</a>
+        </li>
+        <li class="nav-item mx-2">
           <a class="nav-link" href="calculator.html">Carbon footprint calculator</a>
         </li>
         <li class="nav-item mx-2">
@@ -80,9 +96,98 @@
 
     </div>
 
+    <div class="row-lg">
+      <div id="btnContainer">
+        <button type="button" class="btn btn-primary active" onclick="filterSelection('all')"> Show all</button>
+        <button type="button" class="btn btn-primary" onclick="filterSelection('pulses')"> Pulses</button>
+        <button type="button" class="btn btn-primary" onclick="filterSelection('pasta')"> Pasta</button>
+      </div>
+    </div>
 
+    <!-- Product Listings -->
     <div class="row">
 
+      <div class="filter pulses col-md-2 col-lg-2 col-xl-2">
+        <div class="card" style="width: 12rem;">
+          <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pulse 1</h5>
+            <p class="card-text">cost of item</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter pulses col-md-6 col-lg-4 col-xl-2">
+        <div class="card" style="width: 12rem;">
+          <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pulse 2</h5>
+            <p class="card-text">cost of item</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter pulses col-md-6 col-lg-4 col-xl-2">
+        <div class="card" style="width: 12rem;">
+          <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pulse 3</h5>
+            <p class="card-text">cost of item</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter pulses col-md-6 col-lg-4 col-xl-2">
+        <div class="card" style="width: 12rem;">
+          <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pulse 4</h5>
+            <p class="card-text">cost of item</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter pasta col-md-6 col-lg-4 col-xl-2">
+        <div class="card" style="width: 12rem;">
+          <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pasta 5</h5>
+            <p class="card-text">cost of item</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter pasta col-md-6 col-lg-4 col-xl-2">
+        <div class="card" style="width: 12rem;">
+          <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pasta 6</h5>
+            <p class="card-text">cost of item</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter pasta col-md-6 col-lg-4 col-xl-2">
+        <div class="card" style="width: 12rem;">
+          <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pasta 7</h5>
+            <p class="card-text">cost of item</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter pasta col-md-6 col-lg-4 col-xl-2">
+        <div class="card" style="width: 12rem;">
+          <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pasta 8</h5>
+            <p class="card-text">cost of item</p>
+          </div>
+        </div>
+      </div>
+
+<!--
       <div class="col-lg pt-4">
         <h3>Menu items</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -97,7 +202,7 @@
       </div>
 
     </div>
-
+-->
 
 
   </main>
@@ -105,18 +210,20 @@
     <div class="row">
       <div class="col-lg-4">
 
-        <h6 class = "mt-3">About</h4>
+        <h6 class = "mt-3">About</h6>
         <p>The Little Green Larder offers a plastic free shopping experience, with zero waste alternatives to inspire us to create a greener future.</p>
+
 
       </div>
 
       <div class="col-lg">
 
-        <h6 class = "mt-3">Address</h4>
+        <h6 class = "mt-3">Address</h6>
         <p>272 Perth Road, Dundee</p>
       </div>
 
       <div class="col-lg">
+
 
         <h6 class="mt-3">Working hours</h4>
         <table>
@@ -159,8 +266,9 @@
           </tbody>
         </table>
 
+
       </div>
-      
+
       <div class="col mx-auto">
 
         <h6 class = "mt-3">Useful links</h6>
@@ -193,5 +301,55 @@
 
 
 </body>
+
+<!--JavaScript used to filter shop (needs to be moved to separtate JS file)-->
+<script>
+// show all cards
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filter");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered cards
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+// Hide cards that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("btnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
 
 </html>
