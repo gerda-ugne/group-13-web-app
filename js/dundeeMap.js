@@ -1,5 +1,5 @@
 
-
+//Mapbox token
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ2VyZGEtdWduZSIsImEiOiJjazJudmhhODUwdTc3M2NwZWF0dGFjeGhhIn0.nRoeZsel8VskCqR_nU74jA';
 var map = new mapboxgl.Map({
 container: 'map',
@@ -8,6 +8,7 @@ center: [-2.970697,56.462372],
 zoom: 15});
 
 map.on('load', function() {
+  //Layer showing locations along with their icons and descriptions added
   map.addLayer({
     "id": "points",
     "type": "symbol",
@@ -410,6 +411,7 @@ map.on('load', function() {
       "icon-allow-overlap": true,
     }
   });
+  //When a click  event occurs on a marker on the map, a descpription of the location will pop up
 map.on('click', 'points', function (e) {
 var coordinates = e.features[0].geometry.coordinates.slice();
 var description = e.features[0].properties.description;
@@ -432,7 +434,7 @@ map.on('mouseenter', 'points', function () {
 map.getCanvas().style.cursor = 'pointer';
 });
 
-// Change it back to a pointer when it leaves.
+// Change it back to a pointer when you leave marker.
 map.on('mouseleave', 'points', function () {
 map.getCanvas().style.cursor = '';
 });
