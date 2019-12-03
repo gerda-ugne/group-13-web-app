@@ -15,8 +15,17 @@
   <!-- import mapbox files -->
   <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+  <!-- theme color set for web app -->
+  <meta name="theme-color" content="#181D1D"/>
+  <!-- icon in the highest resolution -->
+  <link rel="icon" sizes="192x192" href="images/icons/highres.jpg">
+  <!-- icon for apple touch -->
+  <link rel="apple-touch-icon" href="images/icons/apple-icon.png">
   <!-- import css file -->
   <link rel="stylesheet" href="css/master.css">
+
+  <!-- import manifest.json -->
+  <link rel="manifest" href="web-app/manifest.json">
 
 </head>
 
@@ -227,6 +236,15 @@ Rows of images and text follow-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="js/zenscroll-min.js"></script>
+
+
+  <script>
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('/sw.js')
+             .then(function() { console.log("Service Worker Registered"); });
+  }
+  </script>
 
 </body>
 
