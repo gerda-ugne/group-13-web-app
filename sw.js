@@ -1,5 +1,5 @@
 // Imports Cache polyfill to fully support addALl method
-importScripts('/cache-polyfill.js');
+importScripts('/web-app/cache-polyfill.js');
 
 
 self.addEventListener('install', function(e) {
