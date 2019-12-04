@@ -25,7 +25,7 @@ self.addEventListener('install', function(e) {
 // Logs page requests
 self.addEventListener('fetch', function(event) {
 
-console.log(event.request.url);
+//console.log(event.request.url);
 
 event.respondWith(
 
