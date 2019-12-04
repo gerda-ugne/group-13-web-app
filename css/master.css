@@ -1,4 +1,4 @@
-/* CSS that applies for the entire page */
+/* Font for the page */
 body
 {
   font-family: 'Raleway',sans-serif;
@@ -140,7 +140,11 @@ footer a:hover
   -moz-transition:.5s;
   -webkit-transition:.5s;
 }
+
+
+/* Styling when hovered on questions */
 .questions:hover
+
 {
   color: #7a566e;
   text-decoration:none;
