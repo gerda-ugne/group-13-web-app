@@ -124,7 +124,7 @@ footer a:hover
 }
 
 /* Styling for the questions in about page */
-#questions
+.questions
 {
   font-size:40px;
   font-family: 'Permanent Marker', cursive;
@@ -141,8 +141,11 @@ footer a:hover
   -webkit-transition:.5s;
 }
 
+
 /* Styling when hovered on questions */
-#questions:hover
+.questions:hover
+
 {
   color: #7a566e;
+  text-decoration:none;
 }
