@@ -1,3 +1,4 @@
+// Mapbox token
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ2VyZGEtdWduZSIsImEiOiJjazJudmhhODUwdTc3M2NwZWF0dGFjeGhhIn0.nRoeZsel8VskCqR_nU74jA';
 var map = new mapboxgl.Map({
 container: 'map',
@@ -5,6 +6,7 @@ style: 'mapbox://styles/mapbox/streets-v10',
 center: [-2.9924221,56.4559036],
 zoom: 16});
 
+//Layer with store location added
 map.on('load', function() {
   map.addLayer({
     "id": "points",
@@ -36,4 +38,6 @@ map.on('load', function() {
     }
   });
 });
+
+//Adds control options to the map
 map.addControl(new mapboxgl.NavigationControl());
