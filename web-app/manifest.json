@@ -1,7 +1,7 @@
 {
 "short_name": "Larder",
 "name": "The Little Green Larder",
-"start_url":"/",
+"start_url":"/index.html",
 
 "icons": [
   {
