@@ -94,13 +94,13 @@ function clearWaste() {
 
 // Set field values to 0
 function setAllToZero() {
-  document.getElementById('glass').value = undefined;
-  document.getElementById('cardboard').value = undefined;
-  document.getElementById('tins').value = undefined;
-  document.getElementById('plasticBottles').value = undefined;
-  document.getElementById('drinkCartons').value = undefined;
-  document.getElementById('plasticBags').value = undefined;
-  document.getElementById('plasticFilm').value = undefined;
-  document.getElementById('soiledCardboard').value = undefined;
-  document.getElementById('crispPacket').value = undefined;
+  document.getElementById('glass').value = "undefined";
+  document.getElementById('cardboard').value = "undefined";
+  document.getElementById('tins').value = "undefined";
+  document.getElementById('plasticBottles').value = "undefined";
+  document.getElementById('drinkCartons').value = "undefined";
+  document.getElementById('plasticBags').value = "undefined";
+  document.getElementById('plasticFilm').value = "undefined";
+  document.getElementById('soiledCardboard').value = "undefined";
+  document.getElementById('crispPacket').value = "undefined";
 }
