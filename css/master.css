@@ -144,3 +144,20 @@ footer a:hover
 {
   color: #7a566e;
 }
+
+/* Styling for calculator  score */
+#disp
+{
+  font-size: 200px;
+}
+#dispText
+{
+  font-family: 'Permanent Marker', cursive;
+  font-size:50px;
+}
+
+/* Styling for forms of type number */
+input[type=number]
+{
+  width:50%;
+}

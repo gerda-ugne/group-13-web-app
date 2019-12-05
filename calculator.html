@@ -64,44 +64,140 @@
     </div>
   </nav>
 <main class="container p-5">
-    <h2>track your trash!</h2>
-      <p> each type will give a score depending upon how easily recyclable your waste is.
-       just like golf the aim is to get the lowest score possible.
-        </p>
+
+    <div class="row">
+
+      <!-- Introduction to waste calculator -->
+
+      <div class="col-lg pt-2">
+
+        <h2>Track your trash!</h2>
+          <p>Carbon footprint calculator is a tool that will aid you in reducing your overall waste.</p>
+          <p> Input the amount of the type of waste you have into the fields below. Each type will give a score depending upon how easily recyclable your waste is. The lower the score, the better!</p>
+      </div>
+
+    </div>
+
+<!-- Input fields for waste -->
+    <div class="row">
+
+      <div class="col-lg">
+
+        <table>
+          <tbody>
+            <tr>
+              <th></th>
+              <td><p>Glass bottles</p></td>
+              <td> <input id = "glass" type="number" placeholder="Enter value here..."name="" value=""> <button type="submit" name="button" onclick="calculateGlassWaste()">  Add waste</button> </td>
+            </tr>
+            <tr>
+              <th></th>
+              <td>Cardboard boxes</td>
+                <td> <input id= "cardboard"type="number" placeholder="Enter value here..."name="" value=""> <button type="submit" name="button" onclick="calculateCardboardWaste()">  Add waste</button> </td>
+            </tr>
+            <tr>
+              <th></th>
+              <td>Tins</td>
+                <td> <input id = "tins"type="number" placeholder="Enter value here..."name="" value=""> <button type="submit" name="button" onclick="calculateTinsWaste()">  Add waste</button> </td>
+            </tr>
+            <tr>
+              <th></th>
+              <td>Plastic bottles and punets</td>
+                <td> <input id = "plasticBottles"type="number" placeholder="Enter value here..."name="" value=""> <button type="submit" name="button" onclick="calculatePlasticBottlesWaste()">  Add waste</button> </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+        <div class="col-lg pt-2">
+
+          <table>
+            <tbody>
+              <tr>
+                <th></th>
+                <td>Drink Cartons<td>
+                  <td> <input id = "drinkCartons" type="number" placeholder="Enter value here..."name="" value=""> <button type="submit" name="button" onclick="calculateDrinkCartonsWaste()">  Add waste</button> </td>
+              </tr>
+              <tr>
+                <th></th>
+                <td>Plastic bags<td>
+                  <td> <input id = "plasticBags" type="number" placeholder="Enter value here..."name="" value=""> <button type="submit" name="button" onclick="calculatePlasticBagsWaste()">  Add waste</button> </td>
+              </tr>
+              <tr>
+                <th></th>
+                <td>Plastic film<td>
+                  <td> <input id = "plasticFilm" type="number" placeholder="Enter value here..."name="" value=""> <button type="submit" name="button" onclick="calculatePlasticFilmWaste()">  Add waste</button> </td>
+              </tr>
+              <tr>
+                <th></th>
+                <td>Soiled cardboard boxes<td>
+                  <td> <input id = "soiledCardboard" type="number" placeholder="Enter value here..."name="" value=""> <button type="submit" name="button" onclick="calculateSoiledCardboardWaste()">  Add waste</button> </td>
+              </tr>
+              <tr>
+                <th></th>
+                <td>Crisp packet<td>
+                  <td> <input id="crispPacket" type="number" placeholder="Enter value here..."name="" value=""> <button type="submit" name="button" onclick="calculateCrispPacketWaste()">  Add waste</button> </td>
+              </tr>
+              <tr>
+
+            </tbody>
+          </table>
+
+        </div>
 
 
-        <button onclick="Glass()">glass</button>
+    </div>
 
-        <button onclick="CardBoard()">Cardboard</button>
+    <div class="row">
 
-        <button onclick="tins()">Tins</button>
+      <div class="col">
 
-        <button onclick="plastic_bottles()">plastic bottles & punnets</button>
+        <table>
+          <tbody>
+            <tr>
+              <th></th>
+              <td class="pt-5"><button onclick="clearWaste()">Clear the score</button><td>
+            </tr>
+            <tr>
+              <th></th>
+              <td class=""><button onclick="setAllToZero()">Clear the fields</button><td>
+            </tr>
+          </tbody>
+        </table>
 
-        <button onclick="drinks_cartons()">drinks cartons</button>
+      </div>
 
-        <button onclick="plastic_bags()">plastic bags</button>
+    </div>
 
-        <button onclick="plastic_film()">plastic film</button>
+<!-- Score displayed -->
+    <div class="row">
 
-        <button onclick="soiled_cardboard()">soiled cardboard</button>
+      <div class="col">
 
-        <button onclick="crisp_packet()">crisp packet</button>
+        <p class = "text-center pt-4" id="dispText">Your score is:</p>
+        <p class = "text-center" id="disp"></p>
 
-        <button onclick="Clear()">clear</button>
+      </div>
+
+    </div>
+
+<!-- User score explained -->
+    <div class="row">
+
+      <div class="col-lg">
+
+        <ul class="list-group text-center list-unstyled">
+          <li class="list-group-item-success pt-3"> <strong> Grade A = 0 points or less </strong> <p> You're doing great, keep it up!</p></li>
+          <li class="list-group-item-info p-3"> <strong> Grade B = 1 > 10 points </strong> <p> You should look into reducing your waste.</p></li>
+          <li class="list-group-item-warning p-3"> <strong> Grade C = 10>20 points </strong><p> Your waste is on unacceptable levels. </p></li>
+          <li class="list-group-item-danger p-3"> <strong> Grade D = 30 points or greater </strong><p> You must reduce your waste. You're killing the planet! </p></li>
+        </ul>
 
 
+      </div>
 
-     <p id="disp"></p>
-
-
-     <p>Grade A = 0 points or less
-        Grade B = 1 > 10 points
-        Grade C = 10>20 points
-        Grade D = 20>30 points
-        Grade F = 30 points or greater
-
-
+    </div>
 
 
 
@@ -202,5 +298,5 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="js/zenscroll-min.js"></script>
   <script src ="js/calc.js"></script>
-  
+
 </body>
