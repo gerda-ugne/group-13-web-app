@@ -1,11 +1,11 @@
-
 //Mapbox token
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ2VyZGEtdWduZSIsImEiOiJjazJudmhhODUwdTc3M2NwZWF0dGFjeGhhIn0.nRoeZsel8VskCqR_nU74jA';
 var map = new mapboxgl.Map({
-container: 'map',
-style: 'mapbox://styles/mapbox/streets-v10',
-center: [-2.970697,56.462372],
-zoom: 15});
+  container: 'map',
+  style: 'mapbox://styles/mapbox/streets-v10',
+  center: [-2.970697, 56.462372],
+  zoom: 15
+});
 
 map.on('load', function() {
   //Layer showing locations along with their icons and descriptions added
@@ -17,58 +17,58 @@ map.on('load', function() {
       "data": {
         "type": "FeatureCollection",
         "features": [{
-          "type": "Feature",
-          "geometry": {
-            "type": "Point",
-            "coordinates": [-2.9924221,56.4559036]
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-2.9924221, 56.4559036]
+            },
+            "properties": {
+              "title": "The Little Green Larder",
+              "description": "The shop itself! Come on down<br>and have a look at what it has to offer.<br><strong>Address</strong>: 272 Perth Rd DD2 1AE<br><strong>Hours</strong>:<br>Monday: 10am-6pm<br>Tuesday: 10am-6pm<br>Wednesday: 9am-5pm<br>Thursday: 4-7pm<br>Friday: 10am-6pm<br>Saturday: 9am-5pm<br>Sunday: 11am-2pm",
+              "icon": "shop"
+            }
           },
-          "properties": {
-            "title": "The Little Green Larder",
-            "description": "The shop itself! Come on down<br>and have a look at what it has to offer.<br><strong>Address</strong>: 272 Perth Rd DD2 1AE<br><strong>Hours</strong>:<br>Monday: 10am-6pm<br>Tuesday: 10am-6pm<br>Wednesday: 9am-5pm<br>Thursday: 4-7pm<br>Friday: 10am-6pm<br>Saturday: 9am-5pm<br>Sunday: 11am-2pm",
-            "icon": "shop"
-          }
-        },
-        {
-          "type": "Feature",
-          "geometry":{
-            "type": "Point",
-            "coordinates": [-3.008874,56.456184]
-          },
-          "properties": {
-            "title": "Harris Academy",
-            "description": "Harris Academy is a co-educational comprehensive school in the West End of Dundee, Scotland. Harris Academy was founded in 1885 and is the oldest public school in Dundee. (Children and parents only)<br><strong>Address</strong>: Perth Rd, Dundee DD2 1NL",
-            "icon": "school"
-          }
-        },
-        {
-          "type": "Feature",
-          "geometry":{
-            "type": "Point",
-            "coordinates": [-3.0494,56.4595]
-          },
-          "properties": {
-            "title": "Riverside View Care Home",
-            "description": "Located on the outskirts of Dundee, in the heart of a quiet residential area, Riverside View is a welcoming care home offering nursing and nursing memory care for those living with dementia.<br><strong>Address</strong>: 60 Clovis Duveau Dr, Dundee DD2 5JB<br><strong>Hours</strong>: Open 24 hours",
-            "icon": "circle"
-          }
-        },
-        {
-          "type": "Feature",
-          "geometry":{
-            "type": "Point",
-            "coordinates": [-2.9923,56.4558]
-          },
-          "properties": {
-            "title": "Shelter Charity Shop",
-            "description": "A wee charity shop near The Little<br>Green Larder that sells a variety of things from books to music.<br><strong>Address</strong>: 268 Perth Rd, Dundee DD2 1AE<br><strong>Hours</strong>:<br>Mon-Sat: 9am-5pm<br>Sunday: closed",
-            "icon": "shop"
-          }
-        },
           {
             "type": "Feature",
-            "geometry":{
+            "geometry": {
               "type": "Point",
-              "coordinates": [-2.9742,56.4632]
+              "coordinates": [-3.008874, 56.456184]
+            },
+            "properties": {
+              "title": "Harris Academy",
+              "description": "Harris Academy is a co-educational comprehensive school in the West End of Dundee, Scotland. Harris Academy was founded in 1885 and is the oldest public school in Dundee. (Children and parents only)<br><strong>Address</strong>: Perth Rd, Dundee DD2 1NL",
+              "icon": "school"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-3.0494, 56.4595]
+            },
+            "properties": {
+              "title": "Riverside View Care Home",
+              "description": "Located on the outskirts of Dundee, in the heart of a quiet residential area, Riverside View is a welcoming care home offering nursing and nursing memory care for those living with dementia.<br><strong>Address</strong>: 60 Clovis Duveau Dr, Dundee DD2 5JB<br><strong>Hours</strong>: Open 24 hours",
+              "icon": "circle"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-2.9923, 56.4558]
+            },
+            "properties": {
+              "title": "Shelter Charity Shop",
+              "description": "A wee charity shop near The Little<br>Green Larder that sells a variety of things from books to music.<br><strong>Address</strong>: 268 Perth Rd, Dundee DD2 1AE<br><strong>Hours</strong>:<br>Mon-Sat: 9am-5pm<br>Sunday: closed",
+              "icon": "shop"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-2.9742, 56.4632]
             },
             "properties": {
               "title": "Abertay University",
@@ -78,9 +78,9 @@ map.on('load', function() {
           },
           {
             "type": "Feature",
-            "geometry":{
+            "geometry": {
               "type": "Point",
-              "coordinates": [-2.991741,56.456268]
+              "coordinates": [-2.991741, 56.456268]
             },
             "properties": {
               "title": "Blackness Primary School",
@@ -90,9 +90,9 @@ map.on('load', function() {
           },
           {
             "type": "Feature",
-            "geometry":{
+            "geometry": {
               "type": "Point",
-              "coordinates": [-2.955721,56.469237]
+              "coordinates": [-2.955721, 56.469237]
             },
             "properties": {
               "title": "Boomerang Community Centre",
@@ -102,9 +102,9 @@ map.on('load', function() {
           },
           {
             "type": "Feature",
-            "geometry":{
+            "geometry": {
               "type": "Point",
-              "coordinates": [-2.988567,56.454631]
+              "coordinates": [-2.988567, 56.454631]
             },
             "properties": {
               "title": "Cherry Blossom Nursery",
@@ -114,9 +114,9 @@ map.on('load', function() {
           },
           {
             "type": "Feature",
-            "geometry":{
+            "geometry": {
               "type": "Point",
-              "coordinates": [-2.969253,56.464595]
+              "coordinates": [-2.969253, 56.464595]
             },
             "properties": {
               "title": "Dundee Central Library",
@@ -126,9 +126,9 @@ map.on('load', function() {
           },
           {
             "type": "Feature",
-            "geometry":{
+            "geometry": {
               "type": "Point",
-              "coordinates": [-2.985143,56.455243]
+              "coordinates": [-2.985143, 56.455243]
             },
             "properties": {
               "title": "Roseangle House Nursery",
@@ -138,9 +138,9 @@ map.on('load', function() {
           },
           {
             "type": "Feature",
-            "geometry":{
+            "geometry": {
               "type": "Point",
-              "coordinates": [-2.99253,56.482784]
+              "coordinates": [-2.99253, 56.482784]
             },
             "properties": {
               "title": "Tesco Kingsway",
@@ -150,9 +150,9 @@ map.on('load', function() {
           },
           {
             "type": "Feature",
-            "geometry":{
+            "geometry": {
               "type": "Point",
-              "coordinates": [-2.997369,56.46174]
+              "coordinates": [-2.997369, 56.46174]
             },
             "properties": {
               "title": "Victoria Park Primary School",
@@ -162,9 +162,9 @@ map.on('load', function() {
           },
           {
             "type": "Feature",
-            "geometry":{
+            "geometry": {
               "type": "Point",
-              "coordinates": [-2.992133,56.45188]
+              "coordinates": [-2.992133, 56.45188]
             },
             "properties": {
               "title": "Tesco Riverside",
@@ -174,9 +174,9 @@ map.on('load', function() {
           },
           {
             "type": "Feature",
-            "geometry":{
+            "geometry": {
               "type": "Point",
-              "coordinates": [-2.967918,56.46111]
+              "coordinates": [-2.967918, 56.46111]
             },
             "properties": {
               "title": "St Paul's Cathedral",
@@ -186,9 +186,9 @@ map.on('load', function() {
           },
           {
             "type": "Feature",
-            "geometry":{
+            "geometry": {
               "type": "Point",
-              "coordinates": [-2.88262,56.469473]
+              "coordinates": [-2.88262, 56.469473]
             },
             "properties": {
               "title": "St Luke's of Broughty Ferry",
@@ -198,9 +198,9 @@ map.on('load', function() {
           },
           {
             "type": "Feature",
-            "geometry":{
+            "geometry": {
               "type": "Point",
-              "coordinates": [-2.997369,56.46174]
+              "coordinates": [-2.997369, 56.46174]
             },
             "properties": {
               "title": "St Joseph's RC primary school",
@@ -210,9 +210,9 @@ map.on('load', function() {
           },
           {
             "type": "Feature",
-            "geometry":{
+            "geometry": {
               "type": "Point",
-              "coordinates": [-2.965024,56.465517]
+              "coordinates": [-2.965024, 56.465517]
             },
             "properties": {
               "title": "St Andrew's Parish Church",
@@ -222,9 +222,9 @@ map.on('load', function() {
           },
           {
             "type": "Feature",
-            "geometry":{
+            "geometry": {
               "type": "Point",
-              "coordinates": [-2.917261,56.489616]
+              "coordinates": [-2.917261, 56.489616]
             },
             "properties": {
               "title": "Signpost International",
@@ -234,9 +234,9 @@ map.on('load', function() {
           },
           {
             "type": "Feature",
-            "geometry":{
+            "geometry": {
               "type": "Point",
-              "coordinates": [-2.98374,56.456206]
+              "coordinates": [-2.98374, 56.456206]
             },
             "properties": {
               "title": "Roseangle Cafe",
@@ -246,9 +246,9 @@ map.on('load', function() {
           },
           {
             "type": "Feature",
-            "geometry":{
+            "geometry": {
               "type": "Point",
-              "coordinates": [-3.009046,56.471096]
+              "coordinates": [-3.009046, 56.471096]
             },
             "properties": {
               "title": "Lochee Library",
@@ -258,9 +258,9 @@ map.on('load', function() {
           },
           {
             "type": "Feature",
-            "geometry":{
+            "geometry": {
               "type": "Point",
-              "coordinates": [-2.986669,56.477619]
+              "coordinates": [-2.986669, 56.477619]
             },
             "properties": {
               "title": "Kingscross Hospital",
@@ -270,9 +270,9 @@ map.on('load', function() {
           },
           {
             "type": "Feature",
-            "geometry":{
+            "geometry": {
               "type": "Point",
-              "coordinates": [-2.8793,56.4704]
+              "coordinates": [-2.8793, 56.4704]
             },
             "properties": {
               "title": "Grove Academy",
@@ -282,9 +282,9 @@ map.on('load', function() {
           },
           {
             "type": "Feature",
-            "geometry":{
+            "geometry": {
               "type": "Point",
-              "coordinates": [-2.98635,56.456122]
+              "coordinates": [-2.98635, 56.456122]
             },
             "properties": {
               "title": "Gate Church International",
@@ -294,9 +294,9 @@ map.on('load', function() {
           },
           {
             "type": "Feature",
-            "geometry":{
+            "geometry": {
               "type": "Point",
-              "coordinates": [-2.974923,56.462304]
+              "coordinates": [-2.974923, 56.462304]
             },
             "properties": {
               "title": "Dundee Voluntary Action",
@@ -306,9 +306,9 @@ map.on('load', function() {
           },
           {
             "type": "Feature",
-            "geometry":{
+            "geometry": {
               "type": "Point",
-              "coordinates": [-3.004002,56.483707]
+              "coordinates": [-3.004002, 56.483707]
             },
             "properties": {
               "title": "The Circle",
@@ -318,9 +318,9 @@ map.on('load', function() {
           },
           {
             "type": "Feature",
-            "geometry":{
+            "geometry": {
               "type": "Point",
-              "coordinates": [-2.856218,56.47654]
+              "coordinates": [-2.856218, 56.47654]
             },
             "properties": {
               "title": "Balgillo Nursery",
@@ -330,9 +330,9 @@ map.on('load', function() {
           },
           {
             "type": "Feature",
-            "geometry":{
+            "geometry": {
               "type": "Point",
-              "coordinates": [-2.9978,56.466]
+              "coordinates": [-2.9978, 56.466]
             },
             "properties": {
               "title": "City Church",
@@ -342,9 +342,9 @@ map.on('load', function() {
           },
           {
             "type": "Feature",
-            "geometry":{
+            "geometry": {
               "type": "Point",
-              "coordinates": [-2.996866,56.456793]
+              "coordinates": [-2.996866, 56.456793]
             },
             "properties": {
               "title": "Blackness Library",
@@ -352,54 +352,55 @@ map.on('load', function() {
               "icon": "library"
             }
           },
-            {
-              "type": "Feature",
-              "geometry":{
-                "type": "Point",
-                "coordinates": [-2.9254,56.4758]
-              },
-              "properties": {
-                "title": "Asda Dundee Milton",
-                "description": "Asda online shopping, find fresh groceries, George clothing & home, insurance, & more delivered to your door. Save money. Live better.<br><strong>Address</strong>: Milton of Craigie Rd S, Dundee DD4 7RX<br><strong>Hours</strong>: Open 24 hours",
-                "icon": "shop"
-              }
-        },
-        {
-          "type": "Feature",
-          "geometry":{
-            "type": "Point",
-            "coordinates": [-2.97464,56.462648]
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-2.9254, 56.4758]
+            },
+            "properties": {
+              "title": "Asda Dundee Milton",
+              "description": "Asda online shopping, find fresh groceries, George clothing & home, insurance, & more delivered to your door. Save money. Live better.<br><strong>Address</strong>: Milton of Craigie Rd S, Dundee DD4 7RX<br><strong>Hours</strong>: Open 24 hours",
+              "icon": "shop"
+            }
           },
-          "properties": {
-            "title": "British Telecom",
-            "description": "Thei property portfolio provides a large selection of properties across the UK ranging in both size and specification.<br><strong>Address</strong>: W Bell St, Dundee DD1 1ES",
-            "icon": "circle"
-          }
-        },
-        {
-          "type": "Feature",
-          "geometry":{
-            "type": "Point",
-            "coordinates": [-2.987344,56.456258]
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-2.97464, 56.462648]
+            },
+            "properties": {
+              "title": "British Telecom",
+              "description": "Thei property portfolio provides a large selection of properties across the UK ranging in both size and specification.<br><strong>Address</strong>: W Bell St, Dundee DD1 1ES",
+              "icon": "circle"
+            }
           },
-          "properties": {
-            "title": "Dundee West End Community Fridge",
-            "description": "For those of you who don't know, Community Fridges are communal places where surplus food is shared, by local businesses and individuals. So far Community Fridges have helped thousands connect to their communities, access nutritious food, save money and reduce waste.<br><strong>Address</strong>: Miller's Wynd Car Park, DD1 4HY<br><strong>Hours</strong>:<br>Mon-Fri: 11am-8pm<br>Sat-Sun: 11am-4pm",
-            "icon": "circle"
-          }
-        },
-        {
-          "type": "Feature",
-          "geometry":{
-            "type": "Point",
-            "coordinates": [-3.069403,56.456405]
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-2.987344, 56.456258]
+            },
+            "properties": {
+              "title": "Dundee West End Community Fridge",
+              "description": "For those of you who don't know, Community Fridges are communal places where surplus food is shared, by local businesses and individuals. So far Community Fridges have helped thousands connect to their communities, access nutritious food, save money and reduce waste.<br><strong>Address</strong>: Miller's Wynd Car Park, DD1 4HY<br><strong>Hours</strong>:<br>Mon-Fri: 11am-8pm<br>Sat-Sun: 11am-4pm",
+              "icon": "circle"
+            }
           },
-          "properties": {
-            "title": "James Hutton Institute",
-            "description":"The James Hutton Institute is a well-respected and globally recognised research organisation delivering fundamental and applied science to drive the sustainable use of land and natural resources.<br><strong>Address</strong>: Errol Rd, Dundee DD2 5DA<br><strong>Hours</strong>:<br>Mon-Fri:8:30am-5pm",
-            "icon": "circle"
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-3.069403, 56.456405]
+            },
+            "properties": {
+              "title": "James Hutton Institute",
+              "description": "The James Hutton Institute is a well-respected and globally recognised research organisation delivering fundamental and applied science to drive the sustainable use of land and natural resources.<br><strong>Address</strong>: Errol Rd, Dundee DD2 5DA<br><strong>Hours</strong>:<br>Mon-Fri:8:30am-5pm",
+              "icon": "circle"
+            }
           }
-        }]
+        ]
       }
     },
     "layout": {
@@ -412,31 +413,31 @@ map.on('load', function() {
     }
   });
   //When a click  event occurs on a marker on the map, a descpription of the location will pop up
-map.on('click', 'points', function (e) {
-var coordinates = e.features[0].geometry.coordinates.slice();
-var description = e.features[0].properties.description;
+  map.on('click', 'points', function(e) {
+    var coordinates = e.features[0].geometry.coordinates.slice();
+    var description = e.features[0].properties.description;
 
-// Ensure that if the map is zoomed out such that multiple
-// copies of the feature are visible, the popup appears
-// over the copy being pointed to.
-while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-}
+    // Ensure that if the map is zoomed out such that multiple
+    // copies of the feature are visible, the popup appears
+    // over the copy being pointed to.
+    while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+      coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+    }
 
-new mapboxgl.Popup()
-.setLngLat(coordinates)
-.setHTML(description)
-.addTo(map);
-});
+    new mapboxgl.Popup()
+      .setLngLat(coordinates)
+      .setHTML(description)
+      .addTo(map);
+  });
 
-// Change the cursor to a pointer when the mouse is over the places layer.
-map.on('mouseenter', 'points', function () {
-map.getCanvas().style.cursor = 'pointer';
-});
+  // Change the cursor to a pointer when the mouse is over the places layer.
+  map.on('mouseenter', 'points', function() {
+    map.getCanvas().style.cursor = 'pointer';
+  });
 
-// Change it back to a pointer when you leave marker.
-map.on('mouseleave', 'points', function () {
-map.getCanvas().style.cursor = '';
-});
+  // Change it back to a pointer when you leave marker.
+  map.on('mouseleave', 'points', function() {
+    map.getCanvas().style.cursor = '';
+  });
 });
 map.addControl(new mapboxgl.NavigationControl());

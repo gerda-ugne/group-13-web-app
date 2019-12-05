@@ -1,27 +1,27 @@
 {
   "type": "FeatureCollection",
   "features": [{
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-2.9924221,56.4559036]
-      },
-      "properties": {
-        "title": "The Little Green Larder",
-        "description": "Zero-waste shop"
-      }
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-2.9924221, 56.4559036]
+        },
+        "properties": {
+          "title": "The Little Green Larder",
+          "description": "Zero-waste shop"
+        }
 
-},
-{
-  "type": "FeatureCollection",
-  "features": [{
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-122.414, 37.776]
       },
-      "properties": {
-        "title": "BQ",
-        "description": "recycle shop"
-      }
-}
+      {
+        "type": "FeatureCollection",
+        "features": [{
+              "type": "Feature",
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-122.414, 37.776]
+              },
+              "properties": {
+                "title": "BQ",
+                "description": "recycle shop"
+              }
+            }
