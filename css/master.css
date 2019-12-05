@@ -149,3 +149,12 @@ footer a:hover
   color: #7a566e;
   text-decoration:none;
 }
+
+/* css required to filter shop */
+.filter {
+ display: none;
+}
+
+.show {
+  display: block;
+}
