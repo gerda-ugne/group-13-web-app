@@ -119,7 +119,6 @@ footer a
 footer a:hover
 {
   color:lightgray;
-  font-weight: italic;
   text-decoration: none;
 }
 
