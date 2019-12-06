@@ -7,16 +7,16 @@ self.addEventListener('install', function(e) {
     caches.open('airhorner').then(function(cache) {
       return cache.addAll([
         // List of files to cache
-        '/',
-        '/index.html',
-        '/css/master.css',
-        '/web-app/manifest.json',
-        '/about.html',
-        '/calculator.html',
-        '/map.html',
-        '/menu.html',
-        'shopGuide.html',
-        'advice.html'
+        '/group-13-web-app',
+        '/group-13-web-app/index.html',
+        '/group-13-web-app/css/master.css',
+        '/group-13-web-app/web-app/manifest.json',
+        '/group-13-web-app/about.html',
+        '/group-13-web-app/calculator.html',
+        '/group-13-web-app/map.html',
+        '/group-13-web-app/menu.html',
+        '/group-13-web-app/shopGuide.html',
+        '/group-13-web-app/advice.html'
       ]);
     })
   );
