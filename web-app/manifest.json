@@ -5,12 +5,12 @@
 
 "icons": [
   {
-    "src": "/images/icons/smallres.png",
+    "src": "/group-13-web-app/images/icons/smallres.png",
     "type":"image/png",
     "sizes": "192x192"
   },
   {
-    "src": "/images/icons/highres.png",
+    "src": "/group-13-web-app/images/icons/highres.png",
     "type":"image/png",
     "sizes": "512x512"
   }
